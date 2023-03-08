@@ -18,7 +18,7 @@ public class EmailServiceImpl implements EmailService {
     @Override
     public String sendEmail(String receiverEmail, String content, String title) {
         try{
-            log.info( title + "notification request for [{}]", receiverEmail);
+            log.info( title + " notification request for [{}]", receiverEmail);
             SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
             simpleMailMessage.setFrom(sender);
             simpleMailMessage.setTo(receiverEmail);
