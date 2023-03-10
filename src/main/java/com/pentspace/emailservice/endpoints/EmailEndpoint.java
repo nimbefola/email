@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(path = "notification")
-@Slf4j
+@CrossOrigin(origins = "*")
 public class EmailEndpoint {
     @Autowired
     private EmailService emailService;
